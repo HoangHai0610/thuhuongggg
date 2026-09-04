@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f8f0d8" />
+    <meta
+      name="description"
+      content="Một lời mời đi chơi nho nhỏ dành riêng cho Thu Hương."
+    />
+    <meta property="og:title" content="Thu Hương ơi, mình đi chơi nhé?" />
+    <meta
+      property="og:description"
+      content="Có một lịch hẹn nho nhỏ đang chờ em mở ra 🌼"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/thu-huong-date-card.png" />
+    <title>Mời Thu Hương đi chơi 🌼</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <main>
+        <section class="hero" aria-labelledby="hero-title">
+          <img
+            class="hero-art"
+            src="assets/thu-huong-date-card.png"
+            alt="Minh hoạ khu vườn với hoa tím, mặt trời và tấm thảm picnic"
+          />
+          <div class="hero-shade" aria-hidden="true"></div>
+
+          <nav class="mini-nav" aria-label="Thông tin thiệp">
+            <span>THƯ MỜI ĐẶC BIỆT</span>
+            <span class="mini-nav-mark" aria-hidden="true">✿</span>
+            <span>GỬI RIÊNG EM</span>
+          </nav>
+
+          <div class="hero-copy">
+            <p class="eyebrow">Thu Hương này,</p>
+            <h1 id="hero-title">
+              Ngày mai em<br />
+              <span>trốn làm</span> đi chơi nhé?
+            </h1>
+            <p class="hero-note">
+              Có một “nhiệm vụ trốn làm” đang chờ em. Kéo xuống xem nha!
+            </p>
+            <a class="round-cta" href="#thu-moi" aria-label="Mở lời mời">
+              <span>Mở lời mời</span>
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="m7 10 5 5 5-5" />
+              </svg>
+            </a>
+          </div>
+
+          <span class="doodle doodle-one" aria-hidden="true">✦</span>
+          <span class="doodle doodle-two" aria-hidden="true">♡</span>
+        </section>
+
+        <section class="letter section-pad" id="thu-moi" aria-labelledby="letter-title">
+          <div class="section-label">
+            <span>01</span>
+            <span class="label-line"></span>
+            <span>LỜI NHẮN NHỎ</span>
+          </div>
+
+          <div class="letter-heading">
+            <p>Này <span data-invitee>Thu Hương</span>,</p>
+            <h2 id="letter-title">Mai trốn làm<br />đi chơi không?</h2>
+          </div>
+
+          <div class="letter-body">
+            <p>
+              Mai em trốn làm đi chơi với anh không? Kế hoạch khá rõ ràng:
+              gặp nhau, ăn trưa, đi loanh quanh, uống cà phê và đúng 6 giờ thì
+              đi đánh cầu lông.
+            </p>
+            <p>
+              Anh đã lên lịch tử tế rồi. Em chỉ cần chốt kèo, mang theo đồ đánh
+              cầu và đừng để công việc phát hiện là được.
+            </p>
+            <p class="letter-ps">
+              P/S: Nếu sếp hỏi thì… đoạn này em tự nghĩ lý do nhé.
+            </p>
+          </div>
+
+          <div class="date-ticket" aria-label="Thời gian cuộc hẹn">
+            <div class="ticket-side">
+              <span>DATE</span>
+              <strong id="date-day">05</strong>
+            </div>
+            <div class="ticket-main">
+              <span id="date-weekday">Thứ Bảy</span>
+              <strong id="date-month-year">Tháng 09 · 2026</strong>
+            </div>
+            <span class="ticket-flower" aria-hidden="true">✿</span>
+          </div>
+        </section>
+
+        <section class="timeline-section section-pad" aria-labelledby="timeline-title">
+          <div class="section-label">
+            <span>02</span>
+            <span class="label-line"></span>
+            <span>TIMELINE BÍ MẬT</span>
+          </div>
+
+          <div class="timeline-heading">
+            <p class="hand-note">Out of office timeline</p>
+            <h2 id="timeline-title">Timeline trốn làm<br />cùng nhau</h2>
+            <span class="pink-underline" aria-hidden="true"></span>
+            <p class="drag-hint">
+              Kéo bông hoa xuống để mở từng “chứng cứ”
+              <span aria-hidden="true">↓</span>
+            </p>
+          </div>
+
+          <div class="timeline-interactive">
+            <div
+              class="timeline-rail"
+              id="timeline-rail"
+              role="slider"
+              tabindex="0"
+              aria-label="Khám phá lịch hẹn"
+              aria-valuemin="1"
+              aria-valuemax="5"
+              aria-valuenow="1"
+              aria-valuetext="10 giờ, Gặp nhau nè"
+            >
+              <div class="rail-line"></div>
+              <div class="rail-progress"></div>
+              <div class="flower-thumb" id="flower-thumb" aria-hidden="true">
+                <span>✿</span>
+              </div>
+            </div>
+
+            <article class="plan-card" aria-live="polite">
+              <div class="polaroid-photo" id="plan-photo" role="img" aria-label="Minh hoạ hai người gặp nhau">
+                <span class="photo-tape" aria-hidden="true"></span>
+                <div class="plan-sketch" id="plan-sketch" aria-hidden="true"></div>
+                <span class="photo-sticker" id="plan-sticker" aria-hidden="true">✦</span>
+              </div>
+              <div class="plan-copy">
+                <div class="plan-number" id="plan-number">01</div>
+                <p class="plan-time" id="plan-time">10:00</p>
+                <h3 id="plan-title">Gặp nhau nè</h3>
+                <p class="plan-description" id="plan-description">
+                  Check-in trạm đầu tiên, chính thức bật chế độ trốn deadline.
+                </p>
+              </div>
+              <p class="plan-secret" id="plan-secret">mật mã: không nhắc chuyện công việc</p>
+            </article>
+          </div>
+
+          <div class="timeline-status" aria-hidden="true">
+            <span id="timeline-count">1 / 5</span>
+            <span class="status-line"><i></i></span>
+          </div>
+        </section>
+
+        <section class="answer-section section-pad" aria-labelledby="answer-title">
+          <span class="answer-spark spark-left" aria-hidden="true">✦</span>
+          <span class="answer-spark spark-right" aria-hidden="true">✿</span>
+          <p class="hand-note">Câu hỏi chốt kèo:</p>
+          <h2 id="answer-title">
+            Chốt kèo nhé,<br /><span data-invitee>Thu Hương</span>?
+          </h2>
+          <p class="answer-copy">
+            Chỉ cần em gật đầu, “đơn trốn làm” sẽ có hiệu lực ngay lập tức.
+          </p>
+          <button class="yes-button" id="yes-button" type="button">
+            <span>Em đồng ý!</span>
+            <span class="button-flower" aria-hidden="true">✿</span>
+          </button>
+          <button class="review-button" id="review-button" type="button">
+            Để em xem lại timeline đã
+          </button>
+        </section>
+
+        <footer>
+          <p>made with <span aria-label="yêu thương">♡</span> for Thu Hương</p>
+          <span>05 · 09 · 2026</span>
+        </footer>
+      </main>
+    </div>
+
+    <dialog class="success-dialog" id="success-dialog">
+      <div class="dialog-art" aria-hidden="true">
+        <span>✦</span><span>✿</span><span>♡</span><span>✦</span>
+      </div>
+      <button class="dialog-close" id="dialog-close" aria-label="Đóng" type="button">×</button>
+      <div class="dialog-sun" aria-hidden="true">☀</div>
+      <p class="hand-note">Ok, chốt lịch!</p>
+      <h2>Kèo đã<br />được duyệt!</h2>
+      <p>
+        Anh sẽ nhắn em địa điểm cụ thể. Nhớ mang theo đồ đánh cầu lông nhé 🌼
+      </p>
+      <button class="share-button" id="share-button" type="button">
+        Gửi câu trả lời cho anh
+      </button>
+      <p class="share-note" id="share-note">Nút này sẽ mở ứng dụng nhắn tin của em.</p>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
